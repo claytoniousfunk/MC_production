@@ -8,9 +8,9 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
         pythia8CommonSettingsBlock,
    	pythia8CP5SettingsBlock,
         processParameters = cms.vstring('HardQCD:all = on', 
-                                        'PhaseSpace:pTHatMin = 15.', 
-                                        'PhaseSpace:pTHatMax = 1200.',#Upper bound since we will do weighted pthat event-by-event
-                                        'PhaseSpace:bias2Selection = on',#Bias to selection, standard as JERC
+                                        'PhaseSpace:pTHatMin = 30.', 
+                                        'PhaseSpace:pTHatMax = 30.',#Upper bound since we will do weighted pthat event-by-event
+                                        'PhaseSpace:bias2Selection = off',#Bias to selection, standard as JERC
                                         'PhaseSpace:bias2SelectionPow = 4.5',
                                         'PhaseSpace:bias2SelectionRef = 15.'),
         parameterSets = cms.vstring('pythia8CommonSettings', 
@@ -27,7 +27,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
                          )
 
 configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat > 15 GeV; pt-hat < 1200 GeV, weighted, TuneCP5) at sqrt(s) = 5.02 TeV')
+    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat = 30 GeV; TuneCP5) at sqrt(s) = 5.02 TeV')
     )
 
 ProductionFilterSequence = cms.Sequence(generator)
