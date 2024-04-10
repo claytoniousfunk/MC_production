@@ -15,4 +15,4 @@ cmsDriver.py Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_genFragment
 	     --geometry DB:Extended \
 	     --era Run2_2018_pp_on_AA \
 	     --nThreads 4 \
-	     -n 10000
+	     -n 1000
