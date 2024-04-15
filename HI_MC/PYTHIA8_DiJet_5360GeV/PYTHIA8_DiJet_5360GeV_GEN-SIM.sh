@@ -1,8 +1,8 @@
 #!/bin/bash
 
-GEN_FRAGMENT_PATH="Configuration/GenProduction/python/Pythia8_DiJet_pp_5360GeV_fragment.py"
-GEN_CONFIG="Pythia8_DiJet_pp_5360GeV_GEN.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/Pythia8_DiJet_pp_5360GeV_GEN.root"
+GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_DiJet_5360GeV_genFragment.py"
+GEN_CONFIG="PYTHIA8_DiJet_5360GeV_GEN.py"
+OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_DiJet_5360GeV_GEN.root"
 GLOBAL_TAG="140X_mcRun3_2024_realistic_v3"
 BEAMSPOT="Realistic25ns13p6TeVEarly2023Collision"
 NUMBER_OF_THREADS=8
