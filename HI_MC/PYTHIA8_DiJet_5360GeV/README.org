@@ -1,0 +1,10 @@
+#+title: PYTHIA8 DiJet MC
+#+date: 2024-04-15
+
+* Summary
+These scripts are used to generate PYTHIA8 DiJet MC samples.  The steps are
+- GEN-SIM
+- RAW
+- RECO
+
+The gen fragement must be put in ~CMSSW_14_0_0/src/Configuration/GenProduction/python/~.  The path is specified in the ~GEN-SIM.sh~ script.
