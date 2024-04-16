@@ -14,4 +14,4 @@ cmsDriver.py --filein file:/eos/cms/store/group/phys_heavyions/cbennett/MC_produ
 	     --geometry DB:Extended \
 	     --era Run2_2018_pp_on_AA \
 	     --nThreads 4 \
-	     -n 1000
+	     -n 100
