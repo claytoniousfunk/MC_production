@@ -14,7 +14,7 @@ cmsDriver.py step2 \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
-	     --step RAW2DIGI,L1Reco,RECO \
+	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
 	     --scenario HeavyIons \
 	     --geometry DB:Extended \
 	     --era $ERA \
