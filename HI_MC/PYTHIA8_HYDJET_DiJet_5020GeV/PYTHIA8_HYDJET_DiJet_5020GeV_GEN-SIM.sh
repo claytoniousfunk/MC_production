@@ -14,7 +14,7 @@ cmsDriver.py  $GEN_FRAGMENT_PATH\
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --fileout file:$OUTPUT_FILE \
 	     --mc \
-	     --pileup HiMixGEN \
+	     --pileup HiMix \
 	     --pileup_input "dbs:/MinBias_Hydjet_Drum5F_2018_5p02TeV/HINPbPbAutumn18GS-103X_upgrade2018_realistic_HI_v11-v1/GEN-SIM" \
 	     --eventcontent RAWSIM \
 	     --datatier GEN-SIM \
