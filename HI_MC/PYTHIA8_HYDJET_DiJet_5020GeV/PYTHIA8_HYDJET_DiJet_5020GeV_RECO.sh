@@ -8,8 +8,7 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_R
 NUMBER_OF_THREADS=8
 NUMBER_OF_EVENTS=100
 
-cmsDriver.py #step2 \
-	     --mc \
+cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
