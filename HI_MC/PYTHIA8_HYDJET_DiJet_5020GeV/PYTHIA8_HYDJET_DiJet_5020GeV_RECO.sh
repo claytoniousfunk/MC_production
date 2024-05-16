@@ -11,7 +11,7 @@ NUMBER_OF_EVENTS=100
 cmsDriver.py step2 \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --filein file:$INPUT_FILE \
-	     --fileout file:$OUTPUT_FILE \
+	     #--fileout file:$OUTPUT_FILE \
 	     --mc \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
