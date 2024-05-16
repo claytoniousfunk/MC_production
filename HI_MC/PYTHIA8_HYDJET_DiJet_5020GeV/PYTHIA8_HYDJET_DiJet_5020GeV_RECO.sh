@@ -5,7 +5,7 @@ GLOBAL_TAG="103X_upgrade2018_realistic_HI_v11"
 ERA="Run2_2018_pp_on_AA"
 INPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RAW/PYTHIA8_HYDJET_DiJet_5020GeV_RAW.root"
 OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RECO/PYTHIA8_HYDJET_DiJet_5020GeV_RECO.root"
-NUMBER_OF_THREADS=4
+NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=100
 
 cmsDriver.py step2 \
