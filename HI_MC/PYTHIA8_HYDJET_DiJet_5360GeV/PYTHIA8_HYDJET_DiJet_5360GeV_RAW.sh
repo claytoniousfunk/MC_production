@@ -1,5 +1,6 @@
 #!/bin/bash
 
+OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5360GeV_RAW.py"
 GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
 ERA="Run3_pp_on_PbPb_2023"
 INPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
@@ -9,6 +10,7 @@ NUMBER_OF_EVENTS=100
 
 #CMSSW release: CMSSW_13_2_10
 cmsDriver.py step1 \
+	     --python_filename $OUTPUT_EXECUTABLE \
 	     --mc \
 	     --pileup HiMix \
 	     --pileup_input "dbs:/MinBias_Drum5F_5p36TeV_hydjet/HINPbPbSpring23GS-130X_mcRun3_2023_realistic_HI_v18-v2/GEN-SIM" \
