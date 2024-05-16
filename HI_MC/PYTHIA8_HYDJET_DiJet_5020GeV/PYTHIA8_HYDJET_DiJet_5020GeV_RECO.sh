@@ -15,7 +15,7 @@ cmsDriver.py step2 \
 	     --fileout file:$OUTPUT_FILE \
 	     --mc \
 	     --eventcontent AODSIM \
-	     --datatier GEN-SIM-RECO \
+	     --datatier AODSIM \
 	     --conditions $GLOBAL_TAG \
 	     --step RAW2DIGI,L1Reco,RECO \
 	     --scenario HeavyIons \
