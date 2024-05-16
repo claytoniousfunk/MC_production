@@ -14,6 +14,7 @@ cmsDriver.py step2 \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
+	     --customise_commands "process.hltSiStripRawToDigi.ProductLabel='rawDataCollector';process.hltScalersRawToDigi.scalersInputTag='rawDataCollector'" \
 	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
 	     --scenario HeavyIons \
 	     --geometry DB:Extended \
