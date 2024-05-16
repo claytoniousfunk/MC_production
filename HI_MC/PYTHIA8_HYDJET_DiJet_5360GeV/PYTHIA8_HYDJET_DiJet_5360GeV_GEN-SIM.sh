@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# CMSSW release: CMSSW_13_0_18_HeavyIon
 cmsDriver.py Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py \
 	     --python_filename PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py \
 	     --fileout file:/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root \
