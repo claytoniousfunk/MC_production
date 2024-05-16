@@ -1,4 +1,4 @@
-#+title: PYTHIA8 DiJet MC
+#+title: MC Production in CMS
 #+date: 2024-04-15
 
 * Summary
