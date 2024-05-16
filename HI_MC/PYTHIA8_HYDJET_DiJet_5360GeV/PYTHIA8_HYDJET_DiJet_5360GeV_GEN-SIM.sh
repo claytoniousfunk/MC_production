@@ -15,7 +15,7 @@ cmsDriver.py Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5360GeV_gen
 	     --geometry DB:Extended \
 	     --era Run3_pp_on_PbPb \
 	     --nThreads 8 \
-	     --no_exec
+	     --no_exec \
 	     -n 100
 	     
 
