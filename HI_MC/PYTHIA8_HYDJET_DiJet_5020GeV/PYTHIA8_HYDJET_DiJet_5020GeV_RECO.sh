@@ -9,8 +9,10 @@ NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=100
 
 cmsDriver.py step2 \
-	     --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
+	     --filein file:$INPUT_FILE \
+	     --fileout file:$OUTPUT_FILE \
+	     --mc \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
@@ -18,8 +20,6 @@ cmsDriver.py step2 \
 	     --scenario HeavyIons \
 	     --geometry DB:Extended \
 	     --era $ERA \
-	     --filein file:$INPUT_FILE \
-	     --fileout file:$OUTPUT_FILE \
 	     --nThreads $NUMBER_OF_THREADS \
 	     --no_exec \
 	     -n $NUMBER_OF_EVENTS 
