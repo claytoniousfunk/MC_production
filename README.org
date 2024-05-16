@@ -2,17 +2,19 @@
 #+date: 2024-04-15
 
 * Summary
-These scripts are used to generate PYTHIA8 DiJet MC samples.  The steps are
+These scripts are used to generate MC samples.  The steps are
 - GEN-SIM
 - RAW
 - RECO
 
-The gen fragement must be put in ~CMSSW_14_0_0/src/Configuration/GenProduction/python/~.  The path is specified in the ~GEN-SIM.sh~ script.
+The gen fragement must be put in ~CMSSW_X_Y_Z/src/Configuration/GenProduction/python/~.  The path is specified in the ~*_GEN-SIM.sh~ script.
 
-Note that the scripts have the ~--no-exec~ option enabled, meaning that the config will be created but not run.  To run the config, do the command
+Note that the scripts have the ~--no-exec~ option enabled, meaning that the config will be /created/ but not /run/.  To run the config, do the follwoing bash command in a terminal:
 
 #+begin_src sh
   cmsRun -e -j log.xml config_stepX.py
 #+end_src
 
 where ~config_stepX.sh~ is the GEN, RAW, or RECO python config output from the corresponding scripts.
+
+Enjoy your adventures in MC generation!
