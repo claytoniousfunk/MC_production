@@ -8,6 +8,7 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_R
 
 cmsDriver.py step2 \
 	     --mc \
+	     --filein file:$INPUT_FILE \    
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
@@ -19,7 +20,6 @@ cmsDriver.py step2 \
 	     --no_exec \
 	     -n $NUMBER_OF_EVENTS \
 	     --python_filename $OUTPUT_EXECUTABLE \
-	     --filein file:$INPUT_FILE \    
              --fileout file:$OUTPUT_FILE \
 	     
 	     
