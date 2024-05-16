@@ -8,14 +8,13 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_R
 NUMBER_OF_THREADS=8
 NUMBER_OF_EVENTS=100
 
-cmsDriver.py step2 \
+cmsDriver.py #step2 \
 	     --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --eventcontent AODSIM \
 	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
-	     --customise_commands "process.hltSiStripRawToDigi.ProductLabel='rawDataCollector';process.hltScalersRawToDigi.scalersInputTag='rawDataCollector'" \
-	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
+	     --step RAW2DIGI,L1Reco,RECO \
 	     --scenario HeavyIons \
 	     --geometry DB:Extended \
 	     --era $ERA \
