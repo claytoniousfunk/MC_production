@@ -8,19 +8,18 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_R
 
 cmsDriver.py step2 \
 	     --mc \
+	     --eventcontent AODSIM \
+	     --datatier GEN-SIM-RECO \
 	     --conditions $GLOBAL_TAG \
-	     --era $ERA \
+	     --step RAW2DIGI,L1Reco,RECO \
 	     --nThreads $NUMBER_OF_THREADS \
+	     --scenario HeavyIons \
+	     --geometry DB:Extended \
+	     --era $ERA \	     
 	     --no_exec \
 	     -n $NUMBER_OF_EVENTS \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --filein file:$INPUT_FILE \    
              --fileout file:$OUTPUT_FILE \
-	     --eventcontent AODSIM \
-	     --datatier GEN-SIM-RECO \
-	     --step RAW2DIGI,L1Reco,RECO \
-	     --scenario HeavyIons \
-	     --geometry DB:Extended 
-
-
-
+	     
+	     
