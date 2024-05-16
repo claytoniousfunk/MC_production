@@ -8,6 +8,7 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_R
 NUMBER_OF_THREADS=4
 NUMBER_OF_EVENTS=100
 
+# CMSSW release: CMSSW_10_3_2
 cmsDriver.py step2 \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --filein file:$INPUT_FILE \
