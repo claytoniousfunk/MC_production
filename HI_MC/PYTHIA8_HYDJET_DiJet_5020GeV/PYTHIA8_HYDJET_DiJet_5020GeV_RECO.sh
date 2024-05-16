@@ -17,7 +17,7 @@ cmsDriver.py step2 \
 	     --geometry DB:Extended \
 	     --era $ERA \
 	     --filein file:$INPUT_FILE \    
-             --fileout file:$OUTPUT_FILE \
+             #--fileout file:$OUTPUT_FILE \
 	     --nThreads $NUMBER_OF_THREADS \
 	     --no_exec \
 	     -n $NUMBER_OF_EVENTS
