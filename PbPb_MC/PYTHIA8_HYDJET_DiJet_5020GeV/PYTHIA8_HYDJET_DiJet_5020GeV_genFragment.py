@@ -2,8 +2,6 @@ import FWCore.ParameterSet.Config as cms
 
 from Configuration.Generator.Pythia8CommonSettings_cfi import *
 from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
-from IOMC.RandomEngine.IOMC_cff import RandomNumberGeneratorService
-
 
 generator = cms.EDFilter("Pythia8GeneratorFilter",
     PythiaParameters = cms.PSet(
@@ -28,6 +26,15 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
                          pythiaHepMCVerbosity = cms.untracked.bool(False),
                          pythiaPylistVerbosity = cms.untracked.int32(0)
                          )
+
+# Add the RandomNumberGeneratorService with a dynamic seed
+from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
+
+randomServiceHelper = RandomNumberServiceHelper()
+randomServiceHelper.populate()
+
+# If you want to set a specific seed manually for reproducibility (if needed)
+# process.RandomNumberGeneratorService.generator.initialSeed = cms.untracked.uint32(12345)
 
 configurationMetadata = cms.untracked.PSet(
     annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat = 60 GeV; TuneCP5) at sqrt(s) = 5.02 TeV')
