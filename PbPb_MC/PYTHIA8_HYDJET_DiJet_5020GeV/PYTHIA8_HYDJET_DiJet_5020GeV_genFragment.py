@@ -7,9 +7,10 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
    	pythia8CP5SettingsBlock,
-        processParameters = cms.vstring('HardQCD:all = on', 
+        processParameters = cms.vstring('Random:setSeed = on', # randomize the initial seed to avoid duplicate gen production
+                                        'HardQCD:all = on', 
                                         'PhaseSpace:pTHatMin = 30.', 
-                                        'PhaseSpace:pTHatMax = 30.',#Upper bound since we will do weighted pthat event-by-event
+                                        'PhaseSpace:pTHatMax = 120.',#Upper bound since we will do weighted pthat event-by-event
                                         'PhaseSpace:bias2Selection = off',#Bias to selection, standard as JERC
                                         'PhaseSpace:bias2SelectionPow = 4.5',
                                         'PhaseSpace:bias2SelectionRef = 15.'),
