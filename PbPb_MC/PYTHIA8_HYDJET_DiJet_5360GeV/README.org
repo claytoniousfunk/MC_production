@@ -1,6 +1,6 @@
 #+title: README for PYTHIA+HYDJET at sqrt(s) = 5360 GeV MC production
 
-* Architecture
+* Instructions
 
 - ~LXPLUS 8~
 - ~CMSSW_14_0_0~
@@ -20,8 +20,6 @@ Do the following command to set the correct architecture
   cmsenv
 #+end_src
 
-* MC production code
-
 Clone the ~MC_production~ git repo:
 
 #+begin_src sh
@@ -37,6 +35,9 @@ Make a ~GenProductions~ folder and copy the gen fragment in:
   cp MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py Configuration/GenProduction/python/
 #+end_src
 
-
-
+Build the environment
+#+begin_src sh
+  export SCRAM_ARCH=el8_amd64_gcc10
+  scram b -j 8
+#+end_src
 
