@@ -2,8 +2,14 @@
 
 * Architecture
 
-- ~LXPLUS 9~
+- ~LXPLUS 8~
 - ~CMSSW_14_0_0~
+
+Open an apptainer environment
+
+#+begin_src sh
+  cmssw-el8
+#+end_src
 
 Do the following command to set the correct architecture
 
