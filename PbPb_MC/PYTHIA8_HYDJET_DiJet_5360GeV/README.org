@@ -14,5 +14,21 @@ Do the following command to set the correct architecture
   cmsenv
 #+end_src
 
+* MC production code
+
+Clone the ~MC_production~ git repo:
+
+#+begin_src sh
+  git clone git@github.com:claytoniousfunk/MC_production.git  
+#+end_src
+
+Make a ~GenProductions~ folder and copy the gen fragment in:
+
+#+begin_src sh
+  mkdir -p Configuration/GenProduction/python/
+  cp MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py Configuration/GenProduction/python/
+#+end_src
+
+
 
 
