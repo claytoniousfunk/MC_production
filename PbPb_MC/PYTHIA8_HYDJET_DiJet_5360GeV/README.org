@@ -1,0 +1,18 @@
+#+title: README for PYTHIA+HYDJET at sqrt(s) = 5360 GeV MC production
+
+* Architecture
+
+- ~LXPLUS 9~
+- ~CMSSW_14_0_0~
+
+Do the following command to set the correct architecture
+
+#+begin_src sh
+  export SCRAM_ARCH=el8_amd64_gcc10
+  cmsrel CMSSW_14_0_0 # if you haven't created the CMSSW yet
+  cd CMSSW_14_0_0/src
+  cmsenv
+#+end_src
+
+
+
