@@ -35,9 +35,32 @@ Make a ~GenProductions~ folder and copy the gen fragment in:
   cp MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py Configuration/GenProduction/python/
 #+end_src
 
-Build the environment
+Build the environment:
 #+begin_src sh
   export SCRAM_ARCH=el8_amd64_gcc10
   scram b -j 8
 #+end_src
 
+Hop into the production folder:
+
+#+begin_src sh
+  cd MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV
+#+end_src
+
+Create the GEN-SIM executable with the macro:
+
+#+begin_src sh
+  ./PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.sh
+#+end_src
+
+Test that the executable runs properly:
+
+#+begin_src sh
+  cmsRun PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py
+#+end_src
+
+If so, submit the crab job:
+
+#+begin_src sh
+  crab submit -c crabConfig_GEN-SIM.py
+#+end_src
