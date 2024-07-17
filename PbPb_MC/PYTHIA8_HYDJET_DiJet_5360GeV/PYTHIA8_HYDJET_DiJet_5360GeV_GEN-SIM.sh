@@ -15,7 +15,7 @@ cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --fileout file:$OUTPUT_FILE \
 	     --mc \
 	     --pileup HiMixGEN \
-	     --pileup_input "dbs:/MB_TuneCP5_5p36TeV_ppref-pythia8_CMSSW_14_0_0-140X_mcRun3_2024_realistic_v3_GENSIM/phys_heavyions-ppRefMC_20240219_140X_MB_GEN_SIM-657d236c02e738e7f424d8f0e6db5784/USER" \
+	     --pileup_input "dbs:/MB_TuneCP5_5p36TeV_ppref-pythia8_CMSSW_14_0_0-140X_mcRun3_2024_realistic_v3_GENSIM/phys_heavyions-ppRefMC_20240219_140X_MB_GEN_SIM-657d236c02e738e7f424d8f0e6db5784/USER instance=prod/phys03" \
 	     --eventcontent RAWSIM \
 	     --datatier GEN-SIM \
 	     --conditions $GLOBAL_TAG \
