@@ -1,4 +1,4 @@
-#+title: MC production: PYTHIA+HYDJET at sqrt(s) = 5360 GeV 
+#+title: MC production: PYTHIA at sqrt(s) = 5360 GeV 
 
 * Instructions
 
@@ -18,8 +18,8 @@ Do the following command to set the correct architecture
 
 #+begin_src sh
   export SCRAM_ARCH=el8_amd64_gcc10
-  cmsrel CMSSW_14_1_0_pre3 # if you haven't created the CMSSW yet
-  cd CMSSW_14_1_0_pre3/src
+  cmsrel CMSSW_14_0_0 # if you haven't created the CMSSW yet
+  cd CMSSW_14_0_0/src
   cmsenv
 #+end_src
 
@@ -35,7 +35,7 @@ Make a ~GenProductions~ folder and copy the gen fragment in:
 #+begin_src sh
   # execute following commands from src
   mkdir -p Configuration/GenProduction/python/
-  cp MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py Configuration/GenProduction/python/
+  cp MC_production/pp_MC/PYTHIA8_DiJet_5360GeV/PYTHIA8_DiJet_5360GeV_genFragment.py Configuration/GenProduction/python/
 #+end_src
 
 Build the environment:
@@ -46,19 +46,19 @@ Build the environment:
 Hop into the production folder:
 
 #+begin_src sh
-  cd MC_production/PbPb_MC/PYTHIA8_HYDJET_DiJet_5360GeV
+  cd MC_production/pp_MC/PYTHIA8_DiJet_5360GeV
 #+end_src
 
 Create the GEN-SIM executable with the macro:
 
 #+begin_src sh
-  ./PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.sh
+  ./PYTHIA8_DiJet_5360GeV_GEN-SIM.sh
 #+end_src
 
 Test that the executable runs properly:
 
 #+begin_src sh
-  cmsRun PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py
+  cmsRun PYTHIA8_DiJet_5360GeV_GEN-SIM.py
 #+end_src
 
 If so, submit the crab job:
