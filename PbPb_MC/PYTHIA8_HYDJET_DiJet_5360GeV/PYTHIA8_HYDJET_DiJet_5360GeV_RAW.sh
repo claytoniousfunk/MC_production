@@ -20,8 +20,8 @@ cmsDriver.py step1 \
 	     --step DIGI:pdigi_hi_nogen,L1,DIGI2RAW,HLT:HIon \
 	     --geometry DB:Extended \
 	     --era $ERA \
-	     --filein $INPUT_FILE \
-	     --fileout $OUTPUT_FILE \
+	     --filein file:$INPUT_FILE \
+	     --fileout file:$OUTPUT_FILE \
 	     --nThreads $NUMBER_OF_THREADS \
 	     --no_exec \
 	     -n $NUMBER_OF_EVENTS
