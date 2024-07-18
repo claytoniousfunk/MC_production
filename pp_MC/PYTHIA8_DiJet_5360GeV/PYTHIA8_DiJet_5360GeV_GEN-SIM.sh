@@ -1,13 +1,13 @@
 #!/bin/bash
 
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_DiJet_5360GeV_genFragment.py"
-GEN_CONFIG="PYTHIA8_DiJet_5360GeV_GEN.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_DiJet_5360GeV_GEN.root"
+GEN_CONFIG="PYTHIA8_DiJet_5360GeV_GEN-SIM.py"
+OUTPUT_FILE="PYTHIA8_DiJet_5360GeV_GEN-SIM.root"
 GLOBAL_TAG="140X_mcRun3_2024_realistic_v3"
 BEAMSPOT="Realistic25ns13p6TeVEarly2023Collision"
-NUMBER_OF_THREADS=8
+NUMBER_OF_THREADS=1
 ERA="Run3"
-NUMBER_OF_EVENTS=10000
+NUMBER_OF_EVENTS=100
 
 # STEP 1: GEN-SIM
 cmsDriver.py $GEN_FRAGMENT_PATH \
