@@ -13,7 +13,7 @@ cmsDriver.py step1 \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --mc \
 	     --pileup HiMix \
-	     --pileup_input "dbs:/MinBias_Drum5F_5p36TeV_hydjet/HINPbPbSpring23GS-130X_mcRun3_2023_realistic_HI_v18-v2/GEN-SIM" \
+	     --pileup_input "dbs:/MB_TuneCP5_5p36TeV_ppref-pythia8_CMSSW_14_0_0-140X_mcRun3_2024_realistic_v3_GENSIM/phys_heavyions-ppRefMC_20240219_140X_MB_GEN_SIM-657d236c02e738e7f424d8f0e6db5784/USER instance=prod/phys03" \
 	     --eventcontent RAWSIM \
 	     --datatier GEN-SIM-DIGI-RAW \
 	     --conditions $GLOBAL_TAG \
