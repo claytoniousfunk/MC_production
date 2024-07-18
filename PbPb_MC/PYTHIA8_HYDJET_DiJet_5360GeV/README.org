@@ -2,8 +2,11 @@
 
 * Instructions
 
-- ~LXPLUS 8~
-- ~CMSSW_14_0_0~
+ssh into an LXPLUS environment
+
+#+begin_src sh
+  ssh <USERNAME>@lxplus.cern.ch
+#+end_src
 
 Open an apptainer environment
 
