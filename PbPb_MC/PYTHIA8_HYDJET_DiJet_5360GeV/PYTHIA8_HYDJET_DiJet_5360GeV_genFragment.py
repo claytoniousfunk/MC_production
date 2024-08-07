@@ -27,7 +27,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
                          )
 
 configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat > 30 GeV; pt-hat < 1200 GeV; TuneCP5) at sqrt(s) = 5.36 TeV')
+    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (15 < pt-hat (GeV) < 2000; TuneCP5) at sqrt(s) = 5.36 TeV')
     )
 
 ProductionFilterSequence = cms.Sequence(generator)
