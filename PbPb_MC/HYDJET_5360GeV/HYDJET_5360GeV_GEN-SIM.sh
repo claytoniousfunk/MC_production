@@ -2,14 +2,14 @@
 
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/HYDJET_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="HYDJET_5360GeV_GEN-SIM.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/HYDJET_5360GeV/HYDJET_5360GeV_GEN-SIM.root"
-GLOBAL_TAG="130X_mcRun3_2023_realistic_HI_v18"
+OUTPUT_FILE="HYDJET_5360GeV_GEN-SIM.root"
+GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
 BEAMSPOT="Realistic2023PbPbCollision"
 ERA="Run3_pp_on_PbPb"
-NUMBER_OF_THREADS=8
-NUMBER_OF_EVENTS=100
+NUMBER_OF_THREADS=1
+NUMBER_OF_EVENTS=10
 
-# CMSSW release: CMSSW_13_0_18_HeavyIon
+# CMSSW release: CMSSW_14_1_0_pre3
 cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --fileout file:$OUTPUT_FILE \
