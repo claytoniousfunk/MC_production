@@ -2,7 +2,7 @@
 
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
+OUTPUT_FILE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
 GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
 BEAMSPOT="MatchHI"
 ERA="Run3_pp_on_PbPb"
