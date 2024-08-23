@@ -10,7 +10,7 @@ config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'PYTHIA8_HYDJET_DiJet_5360GeV_RAW.py'
 config.JobType.maxMemoryMB = 4000
-config.JobType.maxJobRuntimeMin = 2700
+#config.JobType.maxJobRuntimeMin = 2700
 #config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
