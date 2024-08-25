@@ -11,11 +11,11 @@ NUMBER_OF_EVENTS=100
 # CMSSW release: CMSSW_14_1_0_pre3
 cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
-	     --eventcontent AODSIM \
-	     --datatier AODSIM \
+	     --eventcontent RECOSIM \
+	     --datatier RECOSIM \
 	     --conditions $GLOBAL_TAG \
 	     --customise_commands "process.hltSiStripRawToDigi.ProductLabel='rawDataCollector';process.hltScalersRawToDigi.scalersInputTag='rawDataCollector'" \
-	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECODEBUG \
+	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
 	     --era $ERA \
 	     --filein file:$INPUT_FILE \
 	     --fileout file:$OUTPUT_FILE \
