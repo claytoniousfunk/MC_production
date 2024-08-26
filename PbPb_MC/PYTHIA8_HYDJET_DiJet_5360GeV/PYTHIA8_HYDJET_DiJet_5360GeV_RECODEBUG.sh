@@ -11,8 +11,8 @@ NUMBER_OF_EVENTS=100
 # CMSSW release: CMSSW_14_1_0_pre3
 cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
-	     --eventcontent RECOSIMDEBUG \
-	     --datatier RECOSIMDEBUG \
+	     --eventcontent RECODEBUG \
+	     --datatier RECODEBUG \
 	     --conditions $GLOBAL_TAG \
 	     --customise_commands "process.hltSiStripRawToDigi.ProductLabel='rawDataCollector';process.hltScalersRawToDigi.scalersInputTag='rawDataCollector'" \
 	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
