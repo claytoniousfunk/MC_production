@@ -14,8 +14,8 @@ cmsDriver.py step1 \
 	     --mc \
 	     --pileup HiMix \
 	     --pileup_input "dbs:/Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1/phys_heavyions-GEN_MC_Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1-c1c381bf911200feb914e6f29e1be6f7/USER instance=prod/phys03" \
-	     --eventcontent RAWDEBUG \
-	     --datatier GEN-SIM-DIGI-RAW \
+	     --eventcontent FEVTDEBUGHLT \
+	     --datatier GEN-SIM-DIGI-RAW-HLTDEBUG \
 	     --conditions $GLOBAL_TAG \
 	     --step DIGI:pdigi_hi_nogen,L1,DIGI2RAW,HLT:HIon \
 	     --geometry DB:Extended \
