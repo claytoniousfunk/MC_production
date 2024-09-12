@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_RAW_PYTHIA8_DiJet_5360GeV_2024-09-12'
+config.General.requestName = 'crabSubmit_RECO_PYTHIA8_DiJet_5360GeV_2024-09-12'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
