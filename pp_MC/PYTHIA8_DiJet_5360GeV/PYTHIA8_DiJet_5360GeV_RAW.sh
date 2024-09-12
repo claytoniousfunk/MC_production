@@ -1,8 +1,8 @@
 #!/bin/bash
 
-INPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_DiJet_5360GeV_GEN.root"
+INPUT_FILE="PYTHIA8_DiJet_5360GeV_GEN.root"
 RAW_CONFIG="PYTHIA8_DiJet_5360GeV_RAW.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RAW/PYTHIA8_DiJet_5360GeV_RAW.root"
+OUTPUT_FILE="PYTHIA8_DiJet_5360GeV_RAW.root"
 GLOBAL_TAG="140X_mcRun3_2024_realistic_v3"
 NUMBER_OF_THREADS=1
 ERA="Run3"
