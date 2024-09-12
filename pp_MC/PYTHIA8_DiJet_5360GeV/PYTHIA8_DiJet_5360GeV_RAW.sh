@@ -4,9 +4,9 @@ INPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GE
 RAW_CONFIG="PYTHIA8_DiJet_5360GeV_RAW.py"
 OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RAW/PYTHIA8_DiJet_5360GeV_RAW.root"
 GLOBAL_TAG="140X_mcRun3_2024_realistic_v3"
-NUMBER_OF_THREADS=8
+NUMBER_OF_THREADS=1
 ERA="Run3"
-NUMBER_OF_EVENTS=10000
+NUMBER_OF_EVENTS=100
 
 # STEP 2: RAW-DIGI (Flat 0 to 4, BX=25ns)
 cmsDriver.py --filein file:$INPUT_FILE \
