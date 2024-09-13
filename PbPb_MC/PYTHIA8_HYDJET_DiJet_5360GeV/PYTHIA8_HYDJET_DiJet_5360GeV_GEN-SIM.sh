@@ -3,13 +3,13 @@
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py"
 OUTPUT_FILE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
-GLOBAL_TAG="130X_mcRun3_2023_realistic_HI_v18"
+GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
 BEAMSPOT="MatchHI"
 ERA="Run3_pp_on_PbPb"
 NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=10
 
-# CMSSW release: CMSSW_13_0_20_HeavyIon
+# CMSSW release: CMSSW_13_2_10
 cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --fileout $OUTPUT_FILE \
