@@ -1,19 +1,19 @@
 #!/bin/bash
 
 OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5360GeV_RAWDEBUG.py"
-GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
+GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
 ERA="Run3_pp_on_PbPb_2023"
 INPUT_FILE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
 OUTPUT_FILE="PYTHIA8_HYDJET_DiJet_5360GeV_RAWDEBUG.root"
 NUMBER_OF_THREADS=1
-NUMBER_OF_EVENTS=100
+NUMBER_OF_EVENTS=10
 
-#CMSSW release: CMSSW_14_1_0_pre3
+#CMSSW release: CMSSW_13_2_10
 cmsDriver.py step1 \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --mc \
 	     --pileup HiMix \
-	     --pileup_input "dbs:/Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1/phys_heavyions-GEN_MC_Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1-c1c381bf911200feb914e6f29e1be6f7/USER instance=prod/phys03" \
+	     --pileup_input "dbs:/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER instance=prod/phys03" \
 	     --eventcontent FEVTDEBUGHLT \
 	     --datatier GEN-SIM-DIGI-RAW-HLTDEBUG \
 	     --conditions $GLOBAL_TAG \

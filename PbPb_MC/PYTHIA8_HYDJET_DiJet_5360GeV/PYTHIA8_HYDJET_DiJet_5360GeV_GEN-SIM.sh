@@ -3,19 +3,19 @@
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.py"
 OUTPUT_FILE="PYTHIA8_HYDJET_DiJet_5360GeV_GEN-SIM.root"
-GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
+GLOBAL_TAG="130X_mcRun3_2023_realistic_HI_v18"
 BEAMSPOT="MatchHI"
 ERA="Run3_pp_on_PbPb"
 NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=10
 
-# CMSSW release: CMSSW_14_1_0_pre3
+# CMSSW release: CMSSW_13_0_20_HeavyIon
 cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --fileout $OUTPUT_FILE \
 	     --mc \
 	     --pileup HiMixGEN \
-	     --pileup_input "dbs:/Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1/phys_heavyions-GEN_MC_Hydjet_Drum5F_CMSW_14_1_0_pre3_22May2024_v1-c1c381bf911200feb914e6f29e1be6f7/USER instance=prod/phys03" \
+	     --pileup_input "dbs:/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER instance=prod/phys03" \
 	     --eventcontent RAWSIM \
 	     --datatier GEN-SIM \
 	     --conditions $GLOBAL_TAG \
