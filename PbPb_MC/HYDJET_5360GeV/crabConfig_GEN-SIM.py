@@ -15,8 +15,8 @@ config.JobType.psetName = 'HYDJET_5360GeV_GEN-SIM.py'
 config.section_("Data")
 config.Data.outputPrimaryDataset = 'HYDJET_5360GeV_141X'
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 100
-NJOBS = 10  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+config.Data.unitsPerJob = 50
+NJOBS = 100  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 config.Data.outputDatasetTag = 'HYDJET_5360GeV_GEN-SIM_141X_2024-08-23'
