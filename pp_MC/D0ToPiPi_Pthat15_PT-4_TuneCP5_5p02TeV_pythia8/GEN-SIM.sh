@@ -3,10 +3,10 @@
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/Pythia8_d0_fragment_PiPi.py"
 GEN_CONFIG="Pythia8_d0_PiPi_GEN-SIM.py"
 OUTPUT_FILE="Pythia8_d0_PiPi_GEN-SIM.root"
-GLOBAL_TAG="auto:phase1_2017_realistic"
+GLOBAL_TAG="94X_mc2017_realistic_forppRef5TeV"
 BEAMSPOT="Realistic25ns13TeVEarly2017Collision"
 NUMBER_OF_THREADS=1
-ERA="Run2_2017"
+ERA="Run2_2017_ppRef"
 NUMBER_OF_EVENTS=10
 
 # STEP 1: GEN-SIM
