@@ -11,12 +11,13 @@ ssh into an LXPLUS environment
 Open an apptainer environment
 
 #+begin_src sh
-  cmssw-el7
+  cmssw-el6
 #+end_src
 
 Do the following command to set the correct architecture
 
 #+begin_src sh
+  export SCRAM_ARCH=slc6_amd64_gcc630
   cmsrel CMSSW_9_4_8 # if you haven't created the CMSSW yet
   cd CMSSW_9_4_8/src
   cmsenv
