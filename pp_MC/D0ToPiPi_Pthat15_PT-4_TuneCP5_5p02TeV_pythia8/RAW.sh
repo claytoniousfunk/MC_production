@@ -18,9 +18,8 @@ cmsDriver.py --filein file:$INPUT_FILE \
 	     --mc \
 	     --conditions $GLOBAL_TAG \
 	     --pileup_input "dbs:/MinBias_TuneCUETP8M1_2017_5p02TeV-pythia8/RunIIpp5Spring18GS-94X_mc2017_realistic_v10For2017G_v3-v2/GEN-SIM" \
-#	     --pileup_dasoption="--limit=0" \
+	     --pileup_dasoption="--limit=0" \
 	     --pileup E7TeV_AVE_2_BX2808 \
-	     --customise_commands "process.mix.input.nbPileupEvents.probFunctionVariable = cms.vint32(0,1,2,3,4) \n process.mix.input.nbPileupEvents.probValue = cms.vdouble(0.200000,0.200000,0.200000,0.200000,0.200000)" \
 	     --nThreads $NUMBER_OF_THREADS \
 	     --geometry DB:Extended \
 	     --era $ERA \
