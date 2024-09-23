@@ -1,20 +1,20 @@
 #!/bin/bash
 
 OUTPUT_EXECUTABLE="HYDJET_5360GeV_RECO.py"
-GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
+GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
 ERA="Run3_pp_on_PbPb_approxSiStripClusters_2023"
-INPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RAW/HYDJET_5360GeV/HYDJET_5360GeV_RAW.root"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_RECO/HYDJET_5360GeV/HYDJET_5360GeV_RECO.root"
-NUMBER_OF_THREADS=8
-NUMBER_OF_EVENTS=100
+INPUT_FILE="HYDJET_5360GeV_RAWDEBUG.root"
+OUTPUT_FILE="HYDJET_5360GeV_RECODEBUG.root"
+NUMBER_OF_THREADS=1
+NUMBER_OF_EVENTS=10
 
 # CMSSW release: CMSSW_13_2_10
 cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
-	     --eventcontent AODSIM \
-	     --datatier AODSIM \
+	     --eventcontent RECODEBUG \
+	     --datatier RECODEBUG \
 	     --conditions $GLOBAL_TAG \
-	     --customise_commands "process.siStripDigisHLT.ProductLabel='rawDataCollector'" \
+	     --customise_commands "process.hltSiStripRawToDigi.ProductLabel='rawDataCollector';process.hltScalersRawToDigi.scalersInputTag='rawDataCollector'" \
 	     --step REPACK:DigiToApproxClusterRaw,RAW2DIGI,L1Reco,RECO \
 	     --era $ERA \
 	     --filein file:$INPUT_FILE \
