@@ -8,7 +8,7 @@ config.General.transferOutputs = True
 
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'PYTHIA8_HYDJET_DiJet_5360GeV_RECODEBUG.py'
+config.JobType.psetName = 'HYDJET_5360GeV_RECODEBUG.py'
 config.JobType.maxMemoryMB = 4000
 config.JobType.maxJobRuntimeMin = 2700
 #config.JobType.allowUndistributedCMSSW = True
