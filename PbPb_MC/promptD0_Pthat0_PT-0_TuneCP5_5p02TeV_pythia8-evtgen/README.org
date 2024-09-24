@@ -51,7 +51,7 @@ Hop into the production folder:
 Create the GEN-SIM executable with the macro:
 
 #+begin_src sh
-  ./GEN-SIM.sh
+  ./promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen_GEN-SIM.sh
 #+end_src
 
 Test that the executable runs properly:
