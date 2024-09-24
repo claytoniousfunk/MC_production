@@ -34,7 +34,7 @@ Make a ~GenProductions~ folder and copy the gen fragment in:
 #+begin_src sh
   # execute following commands from src
   mkdir -p Configuration/GenProduction/python/
-  cp MC_production/PbPb_MC/promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen/promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen_genConfig.py Configuration/GenProduction/python/
+  cp MC_production/PbPb_MC/promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen/promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen_genFragment.py Configuration/GenProduction/python/
 #+end_src
 
 Build the environment:
