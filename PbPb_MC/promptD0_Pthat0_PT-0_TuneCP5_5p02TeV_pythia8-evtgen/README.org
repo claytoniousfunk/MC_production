@@ -57,7 +57,7 @@ Create the GEN-SIM executable with the macro:
 Test that the executable runs properly:
 
 #+begin_src sh
-  cmsRun promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen.py
+  cmsRun promptD0_Pthat0_PT-0_TuneCP5_5p02TeV_pythia8-evtgen_GEN-SIM.py
 #+end_src
 
 If so, submit the crab job:
