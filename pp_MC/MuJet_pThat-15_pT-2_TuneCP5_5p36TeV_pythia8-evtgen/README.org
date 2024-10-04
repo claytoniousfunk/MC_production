@@ -1,4 +1,4 @@
-#+title: MC production: PYTHIA D0->PiPi at 5.02 TeV 
+#+title: MC production: PYTHIA Muon + Dijet at 5.36 TeV 
 
 * Instructions
 
