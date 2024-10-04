@@ -15,8 +15,8 @@ config.JobType.psetName = 'PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM.py'
 config.section_("Data")
 config.Data.outputPrimaryDataset = 'PYTHIA8_HYDJET_DiJet_5020GeV_103X'
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 500
-NJOBS = 2000  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+config.Data.unitsPerJob = 200
+NJOBS = 5000  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM_103X_2024-10-04'
