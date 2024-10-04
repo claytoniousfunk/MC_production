@@ -5,8 +5,8 @@ OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_G
 GLOBAL_TAG="103X_upgrade2018_realistic_HI_v11"
 BEAMSPOT="MatchHI"
 ERA="Run2_2018_pp_on_AA"
-NUMBER_OF_THREADS=8
-NUMBER_OF_EVENTS=100
+NUMBER_OF_THREADS=1
+NUMBER_OF_EVENTS=10
 
 
 # CMSSW release: CMSSW_10_3_2
