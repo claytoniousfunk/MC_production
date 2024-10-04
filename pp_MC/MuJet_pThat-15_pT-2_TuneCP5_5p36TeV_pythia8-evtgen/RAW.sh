@@ -3,7 +3,7 @@
 INPUT_FILE="MuJet_pThat-15_pT-2_TuneCP5_5p36TeV_pythia8-evtgen_GEN-SIM.root"
 RAW_CONFIG="MuJet_pThat-15_pT-2_TuneCP5_5p36TeV_pythia8-evtgen_RAW.py"
 OUTPUT_FILE="MuJet_pThat-15_pT-2_TuneCP5_5p36TeV_pythia8-evtgen_RAW.root"
-GLOBAL_TAG="141X_mcRun3_2024_realistic_ppRef5TeV_v4"
+GLOBAL_TAG="140X_mcRun3_2024_realistic_v3"
 ERA="Run3"
 NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=-1

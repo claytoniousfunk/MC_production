@@ -17,8 +17,8 @@ Open an apptainer environment
 Do the following command to set the correct architecture
 
 #+begin_src sh
-  cmsrel CMSSW_14_1_0 # if you haven't created the CMSSW yet
-  cd CMSSW_14_1_0/src
+  cmsrel CMSSW_14_0_0 # if you haven't created the CMSSW yet
+  cd CMSSW_14_0_0/src
   cmsenv
 #+end_src
 
