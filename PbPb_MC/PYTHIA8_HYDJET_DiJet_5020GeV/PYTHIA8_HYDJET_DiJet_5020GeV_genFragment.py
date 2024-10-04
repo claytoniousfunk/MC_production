@@ -27,16 +27,16 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
                          )
 
 # Add the RandomNumberGeneratorService with a dynamic seed
-from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
+# from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
 
-randomServiceHelper = RandomNumberServiceHelper()
-randomServiceHelper.populate()
+# randomServiceHelper = RandomNumberServiceHelper()
+# randomServiceHelper.populate()
 
 # If you want to set a specific seed manually for reproducibility (if needed)
 # process.RandomNumberGeneratorService.generator.initialSeed = cms.untracked.uint32(12345)
 
 configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat = 60 GeV; TuneCP5) at sqrt(s) = 5.02 TeV')
+    annotation = cms.untracked.string('PYTHIA 8 (unquenched) dijets in NN (pt-hat > 15 GeV; TuneCP5) at sqrt(s) = 5.02 TeV')
     )
 
 ProductionFilterSequence = cms.Sequence(generator)
