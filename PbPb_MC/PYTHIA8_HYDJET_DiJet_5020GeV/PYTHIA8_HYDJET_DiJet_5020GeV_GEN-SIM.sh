@@ -1,7 +1,7 @@
 #!/bin/bash
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/PYTHIA8_HYDJET_DiJet_5020GeV_genFragment.py"
 OUTPUT_EXECUTABLE="PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM.py"
-OUTPUT_FILE="/eos/cms/store/group/phys_heavyions/cbennett/MC_production/output_GEN-SIM/PYTHIA8_HYDJET_DiJet_5020GeV/PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM.root"
+OUTPUT_FILE="PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM.root"
 GLOBAL_TAG="103X_upgrade2018_realistic_HI_v11"
 BEAMSPOT="MatchHI"
 ERA="Run2_2018_pp_on_AA"
