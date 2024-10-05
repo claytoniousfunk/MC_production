@@ -2,14 +2,14 @@
 
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/HYDJET_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="HYDJET_5360GeV_RAW.py"
-GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
+GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
 ERA="Run3_pp_on_PbPb"
 INPUT_FILE="HYDJET_5360GeV_GEN-SIM.root"
 OUTPUT_FILE="HYDJET_5360GeV_RAW.root"
 NUMBER_OF_THREADS=1
-NUMBER_OF_EVENTS=10
+NUMBER_OF_EVENTS=-1
 
-#CMSSW release: CMSSW_14_1_0_pre3
+#CMSSW release: CMSSW_13_2_10
 cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --mc \
