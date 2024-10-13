@@ -23,7 +23,7 @@ config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
 config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5360GeV_RECODEBUG_updatedEra_132X_2024-10-12'
-config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
+#config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
-config.Site.storageSite = 'T2_CH_CERN'
+config.Site.storageSite = 'T2_US_Vanderbilt'
