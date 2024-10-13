@@ -14,7 +14,7 @@ config.JobType.maxJobRuntimeMin = 2700
 
 config.section_("Data")
 
-config.Data.inputDataset = '/HYDJET_5360GeV_141X/phys_heavyions-HYDJET_5360GeV_GEN-SIM_141X_2024-09-18-28c13d839895327199b411cd5cc6d217/USER'
+config.Data.inputDataset = '/HYDJET_5360GeV_141X/phys_heavyions-HYDJET_5360GeV_GEN-SIM_141X_2024-10-13-28c13d839895327199b411cd5cc6d217/USER'
 config.Data.inputDBS = 'phys03'
 
 config.Data.splitting = 'FileBased'
