@@ -3,7 +3,7 @@
 GEN_FRAGMENT_PATH="Configuration/GenProduction/python/HYDJET_5360GeV_genFragment.py"
 OUTPUT_EXECUTABLE="HYDJET_5360GeV_GEN-SIM.py"
 OUTPUT_FILE="HYDJET_5360GeV_GEN-SIM.root"
-GLOBAL_TAG="130X_mcRun3_2023_realistic_HI_v18"
+GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
 BEAMSPOT="Realistic2023PbPbCollision"
 ERA="Run3_pp_on_PbPb"
 NUMBER_OF_THREADS=1
