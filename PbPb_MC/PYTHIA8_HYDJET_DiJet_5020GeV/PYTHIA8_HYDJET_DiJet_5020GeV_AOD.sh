@@ -11,8 +11,8 @@ NUMBER_OF_EVENTS=-1
 # CMSSW release: CMSSW_10_3_2
 cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
-	     --eventcontent AODSIM \
-	     --datatier AODSIM \
+	     --eventcontent MINIAODSIM \
+	     --datatier MINIAODSIM \
 	     --conditions $GLOBAL_TAG \
 	     --step PAT \
 	     --procModifiers genJetSubEvent \
