@@ -1,14 +1,14 @@
 #!/bin/bash
 
 OUTPUT_EXECUTABLE="HYDJET_5360GeV_RECODEBUG.py"
-GLOBAL_TAG="132X_mcRun3_2023_realistic_HI_v9"
+GLOBAL_TAG="141X_mcRun3_2024_realistic_HI_v2"
 ERA="Run3_pp_on_PbPb_approxSiStripClusters_2023"
 INPUT_FILE="HYDJET_5360GeV_RAWDEBUG.root"
 OUTPUT_FILE="HYDJET_5360GeV_RECODEBUG.root"
 NUMBER_OF_THREADS=1
-NUMBER_OF_EVENTS=10
+NUMBER_OF_EVENTS=-1
 
-# CMSSW release: CMSSW_13_2_10
+# CMSSW release: CMSSW_14_1_0_pre3
 cmsDriver.py --mc \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --eventcontent RECODEBUG \
