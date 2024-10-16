@@ -10,7 +10,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
         processParameters = cms.vstring('HardQCD:all = on', 
                                         'PhaseSpace:pTHatMin = 15.', 
                                         'PhaseSpace:pTHatMax = 1200.',#Upper bound since we will do weighted pthat event-by-event
-                                        'PhaseSpace:bias2Selection = off',#Bias to selection, standard as JERC
+                                        'PhaseSpace:bias2Selection = on',#Bias to selection, standard as JERC
                                         'PhaseSpace:bias2SelectionPow = 4.5',
                                         'PhaseSpace:bias2SelectionRef = 15.'),
         parameterSets = cms.vstring('pythia8CommonSettings', 
