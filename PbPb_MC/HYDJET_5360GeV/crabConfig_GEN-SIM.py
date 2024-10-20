@@ -19,7 +19,7 @@ config.Data.unitsPerJob = 100
 NJOBS = 50  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
-config.Data.outputDatasetTag = 'HYDJET_5360GeV_GEN-SIM_141X_2024-10-13'
+config.Data.outputDatasetTag = 'HYDJET_5360GeV_GEN-SIM_141X_updatedGT_2024-10-20'
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
