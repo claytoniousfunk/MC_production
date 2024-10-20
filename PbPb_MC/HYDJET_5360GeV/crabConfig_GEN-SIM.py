@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_GEN-SIM_HYDJET_5360GeV_141X_2024-10-13'
+config.General.requestName = 'crabSubmit_GEN-SIM_HYDJET_5360GeV_141X_updatedGT_2024-10-20'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
@@ -15,8 +15,8 @@ config.JobType.psetName = 'HYDJET_5360GeV_GEN-SIM.py'
 config.section_("Data")
 config.Data.outputPrimaryDataset = 'HYDJET_5360GeV_141X'
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 10
-NJOBS = 500  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+config.Data.unitsPerJob = 100
+NJOBS = 50  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 config.Data.outputDatasetTag = 'HYDJET_5360GeV_GEN-SIM_141X_2024-10-13'
