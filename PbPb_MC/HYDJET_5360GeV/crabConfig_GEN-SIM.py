@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_GEN-SIM_HYDJET_5360GeV_141X_updatedGT_2024-10-21'
+config.General.requestName = 'crabSubmit_GEN-SIM_HYDJET_5360GeV_141X_updatedGT_2024-10-21-2'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
