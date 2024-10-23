@@ -12,7 +12,7 @@ ERA="Run3_pp_on_PbPb_2024"
 NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=10
 
-# CMSSW release: CMSSW_14_1_0_pre3
+# CMSSW release: CMSSW_14_1_0
 cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --fileout file:$OUTPUT_FILE \
