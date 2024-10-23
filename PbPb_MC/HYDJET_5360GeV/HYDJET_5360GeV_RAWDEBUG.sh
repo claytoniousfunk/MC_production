@@ -17,7 +17,7 @@ cmsDriver.py $GEN_FRAGMENT_PATH \
 	     --eventcontent FEVTDEBUGHLT \
 	     --datatier GEN-SIM-DIGI-RAW-HLTDEBUG \
 	     --conditions $GLOBAL_TAG \
-	     --step DIGI:pdigi_hi_nogen,L1,DIGI2RAW,HLT:HIon \
+	     --step DIGI:pdigi_hi_nogen,L1,DIGI2RAW,HLT:@fake2 \
 	     --geometry DB:Extended \
 	     --era $ERA \
 	     --filein file:$INPUT_FILE \
