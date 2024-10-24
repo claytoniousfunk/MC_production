@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_RECODEBUG_HYDJET_5360GeV_141X_updateGT_2024-10-22'
+config.General.requestName = 'crabSubmit_RECODEBUG_HYDJET_5360GeV_141X_updatedEra_updatedGT_2024-10-23'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
@@ -15,13 +15,13 @@ config.JobType.maxJobRuntimeMin = 2700
 
 config.section_("Data")
 
-config.Data.inputDataset = '/HYDJET_5360GeV_141X/phys_heavyions-HYDJET_5360GeV_RAWDEBUG_141X_updatedGT_2024-10-21-970c55846f87b4631a14d8fc0f1d056b/USER'
+config.Data.inputDataset = '/HYDJET_5360GeV_141X/phys_heavyions-HYDJET_5360GeV_RAWDEBUG_141X_updatedEra_updatedGT-5e7815f00f1247af13376689a83381b9/USER'
 config.Data.inputDBS = 'phys03'
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
-config.Data.outputDatasetTag = 'HYDJET_5360GeV_RECODEBUG_updatedEra_updateGT_141X_2024-10-22'
+config.Data.outputDatasetTag = 'HYDJET_5360GeV_RECODEBUG_141X_updatedEra_updateGT'
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
