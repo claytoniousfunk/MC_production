@@ -15,7 +15,7 @@ config.JobType.maxJobRuntimeMin = 2700
 
 config.section_("Data")
 
-config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch14/cbennett-PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_2024-10-17-2-d57f5e81b90a7ad5c8b6d5beabc7b953/USER'
+config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch15/cbennett-PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_2024-10-17-3-d57f5e81b90a7ad5c8b6d5beabc7b953/USER'
 config.Data.inputDBS = 'phys03'
 #config.Data.outputPrimaryDataset = 'PH_DiJet_pThat-30to120'
 config.Data.splitting = 'FileBased'
