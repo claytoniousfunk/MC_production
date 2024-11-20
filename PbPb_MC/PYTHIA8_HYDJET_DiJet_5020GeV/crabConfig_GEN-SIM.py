@@ -20,7 +20,8 @@ NJOBS = 5000  # This is not a configuration parameter, but an auxiliary variable
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM_103X_2024-11-19'
-#config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 config.section_("Site")
-config.Site.storageSite = 'T2_US_Vanderbilt'
+config.Site.storageSite = 'T2_CH_CERN'
+
