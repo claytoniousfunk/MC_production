@@ -21,8 +21,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
-config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch4_2024-12-15
-'
+config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch4_2024-12-15'
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
