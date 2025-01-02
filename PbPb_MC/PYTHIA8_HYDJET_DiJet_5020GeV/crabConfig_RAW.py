@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_RAW_PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch7_2024-12-29'
+config.General.requestName = 'crabSubmit_RAW_PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch8_2024-01-02'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
@@ -14,14 +14,14 @@ config.JobType.maxJobRuntimeMin = 2700
 
 config.section_("Data")
 
-config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch7/phys_heavyions-PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM_103X_batch7_2024-12-29-1fef5af90597ac1d8724c7d2fc8854dc/USER'
+config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch8/phys_heavyions-PYTHIA8_HYDJET_DiJet_5020GeV_GEN-SIM_103X_batch8_2025-01-01-1fef5af90597ac1d8724c7d2fc8854dc/USER'
 config.Data.inputDBS = 'phys03'
 
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
-config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch7_2024-12-29'
+config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch8_2024-01-02'
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
