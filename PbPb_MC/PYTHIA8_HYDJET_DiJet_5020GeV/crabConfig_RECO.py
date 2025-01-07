@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'crabSubmit_RECO_PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch8_2025-01-03'
+config.General.requestName = 'crabSubmit_RECO_PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch9_2025-01-06'
 config.General.workArea = config.General.requestName
 config.General.transferOutputs = True
 
@@ -15,14 +15,14 @@ config.JobType.maxJobRuntimeMin = 2700
 
 config.section_("Data")
 
-config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch8/phys_heavyions-PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch8_2024-01-02-d57f5e81b90a7ad5c8b6d5beabc7b953/USER'
+config.Data.inputDataset = '/PYTHIA8_HYDJET_DiJet_5020GeV_103X_batch9/phys_heavyions-PYTHIA8_HYDJET_DiJet_5020GeV_RAW_103X_batch9_2024-01-05-d57f5e81b90a7ad5c8b6d5beabc7b953/USER'
 config.Data.inputDBS = 'phys03'
 #config.Data.outputPrimaryDataset = 'PH_DiJet_pThat-30to120'
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
-config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RECO_103X_batch8_2025-01-03'
+config.Data.outputDatasetTag = 'PYTHIA8_HYDJET_DiJet_5020GeV_RECO_103X_batch9_2025-01-06'
 
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 config.section_("Site")
