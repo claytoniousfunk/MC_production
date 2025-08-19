@@ -17,7 +17,7 @@ Open an apptainer environment
 Do the following command to set the correct architecture
 
 #+begin_src sh
-  export SCRAM_ARCH=el8_amd64_gcc10
+  export SCRAM_ARCH=el8_amd64_gcc12
   cmsrel CMSSW_14_1_9 # if you haven't created the CMSSW yet
   cd CMSSW_14_1_9/src
   cmsenv
