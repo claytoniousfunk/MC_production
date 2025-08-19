@@ -21,7 +21,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = True
-config.Data.outputDatasetTag = 'MinBias_TuneCP5_5p36TeV-pythia8_2025-08-19'
+config.Data.outputDatasetTag = 'MinBias_TuneCP5_5p36TeV-pythia8_withPU'
 config.Data.outLFNDirBase = '/store/group/phys_heavyions/cbennett/'+config.General.requestName
 
 config.section_("Site")
