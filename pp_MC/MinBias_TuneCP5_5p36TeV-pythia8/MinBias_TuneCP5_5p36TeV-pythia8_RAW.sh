@@ -9,7 +9,7 @@ PILEUP="2024_RunIIIpp5p36Winter24_PoissonOOTPU"
 NUMBER_OF_THREADS=1
 NUMBER_OF_EVENTS=-1
 
-#CMSSW release: CMSSW_10_3_2
+#CMSSW release: CMSSW_14_1_9
 cmsDriver.py step1 \
 	     --python_filename $OUTPUT_EXECUTABLE \
 	     --mc \
