@@ -17,7 +17,6 @@ cmsDriver.py step2 \
 	     --eventcontent RECODEBUG \
 	     --datatier RECODEBUG \
 	     --geometry DB:Extended \
-	     --runUnscheduled \
 	     --conditions $GLOBAL_TAG \
 	     --step RAW2DIGI,L1Reco,RECO,RECOSIM \
 	     --era $ERA \
