@@ -15,8 +15,8 @@ config.JobType.psetName = 'QCD_pThat-15to1200_TuneCP5_13TeV_pythia8_GEN-SIM.py'
 config.section_("Data")
 config.Data.outputPrimaryDataset = 'QCD_pThat-15to1200_TuneCP5_13TeV_pythia8'
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 20000
-NJOBS = 500  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+config.Data.unitsPerJob = 2000
+NJOBS = 5000  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 config.Data.outputDatasetTag = 'QCD_pThat-15to1200_TuneCP5_13TeV_pythia8_GEN-SIM_2025-09-08'
