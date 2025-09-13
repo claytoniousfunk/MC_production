@@ -15,7 +15,7 @@ config.JobType.maxJobRuntimeMin = 2700
 config.section_("Data")
 
 config.Data.inputDataset = '/QCD_pThat-15to1200_TuneCP5_13TeV_pythia8/phys_heavyions-QCD_pThat-15to1200_TuneCP5_13TeV_pythia8_GEN-SIM-c25c5b1ea97bde519124bfd20edebf02/USER'
-config.Data.inputDBS = 'prod/phys03'
+config.Data.inputDBS = 'phys03'
 
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
