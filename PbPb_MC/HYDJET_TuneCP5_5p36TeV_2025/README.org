@@ -1,4 +1,4 @@
-#+title: MC production: PYTHIA+HYDJET at sqrt(s) = 5360 GeV 
+#+title: MC production: 2025 HYDJET at 5.36 TeV 
 
 * Instructions
 
