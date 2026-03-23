@@ -17,42 +17,12 @@ ssh into an LXPLUS environment
 Do the following command to set the correct architecture
 
 #+begin_src sh
-  export SCRAM_ARCH=el8_amd64_gcc12
-  cmsrel CMSSW_15_1_1 # if you haven't created the CMSSW yet
-  cd CMSSW_15_1_1/src
-  cmsenv
-#+end_src
+    k
+    
+  Create the GEN-SIM executable with the macro:
 
-Clone the ~MC_production~ git repo:
-
-#+begin_src sh
-  # execute from src
-  git clone git@github.com:claytoniousfunk/MC_production.git  
-#+end_src
-
-Make a ~GenProductions~ folder and copy the gen fragment in:
-
-#+begin_src sh
-  # execute following commands from src
-  mkdir -p Configuration/GenProduction/python/
-  cp MC_production/PbPb_MC/HYDJET_TuneCP5_5p36TeV_2025/HYDJET_TuneCP5_5p36TeV_2025_genFragment.py Configuration/GenProduction/python/
-#+end_src
-
-Build the environment:
-#+begin_src sh
-  scram b -j 8
-#+end_src
-
-Hop into the production folder:
-
-#+begin_src sh
-  cd MC_production/PbPb_MC/HYDJET_TuneCP5_5p36TeV_2025
-#+end_src
-
-Create the GEN-SIM executable with the macro:
-
-#+begin_src sh
-  ./HYDJET_TuneCP5_5p36TeV_2025_GEN-SIM.sh
+  ,#+begin_src sh
+    ./HYDJET_TuneCP5_5p36TeV_2025_GEN-SIM.sh
 #+end_src
 
 Test that the executable runs properly:
