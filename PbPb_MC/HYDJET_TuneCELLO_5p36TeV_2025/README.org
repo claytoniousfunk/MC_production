@@ -35,7 +35,7 @@ Make a ~GenProductions~ folder and copy the gen fragment in:
 #+begin_src sh
   # execute following commands from src
   mkdir -p Configuration/GenProduction/python/
-  cp MC_production/PbPb_MC/HYDJET_TuneCP5_5p36TeV_2025/HYDJET_TuneCP5_5p36TeV_2025_genFragment.py Configuration/GenProduction/python/
+  cp MC_production/PbPb_MC/HYDJET_TuneCELLO_5p36TeV_2025/HYDJET_TuneCELLO_5p36TeV_2025_genFragment.py Configuration/GenProduction/python/
 #+end_src
 
 Build the environment:
@@ -46,19 +46,19 @@ Build the environment:
 Hop into the production folder:
 
 #+begin_src sh
-  cd MC_production/PbPb_MC/HYDJET_TuneCP5_5p36TeV_2025
+  cd MC_production/PbPb_MC/HYDJET_TuneCELLO_5p36TeV_2025
 #+end_src
 
 Create the GEN-SIM executable with the macro:
 
 #+begin_src sh
-  ./HYDJET_TuneCP5_5p36TeV_2025_GEN-SIM.sh
+  ./HYDJET_TuneCELLO_5p36TeV_2025_GEN-SIM.sh
 #+end_src
 
 Test that the executable runs properly:
 
 #+begin_src sh
-  cmsRun HYDJET_TuneCP5_5p36TeV_2025_GEN-SIM.py
+  cmsRun HYDJET_TuneCELLO_5p36TeV_2025_GEN-SIM.py
 #+end_src
 
 If so, submit the crab job:
